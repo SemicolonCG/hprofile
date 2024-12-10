@@ -35,6 +35,7 @@ jobs:
               -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
               -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
               -Dsonar.sources=src/
+              -Dsonar.java.binaries=target/
 
           # Check the Quality Gate status.
         - name: SonarQube Server Quality Gate check
