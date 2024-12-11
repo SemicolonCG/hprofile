@@ -81,7 +81,7 @@ jobs:
             dockerfile: ./Dockerfile
             context: ./
 
-  BUILD_AND_PUBLISH:
+  DEPLOY:
       needs: BUILD_AND_PUBLISH
       runs-on: ubuntu-latest
       steps:
